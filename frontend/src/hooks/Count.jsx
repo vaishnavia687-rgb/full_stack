@@ -1,11 +1,13 @@
 
-import React, { useState } from 'react'
+import React, {useEffect, useState } from 'react'
 import { Button } from '../components/ui/button'
 
 const Count = () => {
   const [count, setCount] = useState(0)
   const [isVisible, setIsVisible] = useState(true)
-
+useEffect(()=>{
+  console.log("Form useeffect");
+},[]);
   return (
     <div>
       <h3>Count: {count}</h3>
