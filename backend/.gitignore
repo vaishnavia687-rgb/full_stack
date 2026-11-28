@@ -1,1 +1,12 @@
-MONGO_URL=mongodb+srv://vaishnavia687_db_user:vaishnavi@cluster0.bi5bsig.mongodb.net/
+# Environment variables
+.env
+.env.*
+
+# Allow example environment file
+!.env.example
+
+# Dependencies
+node_modules/
+
+# Logs
+*.log
