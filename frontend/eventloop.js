@@ -3,7 +3,9 @@ console.log("start");
         console.log("setTimeout")
     }, 2000)
 
-    promise.resolve(.then(() => {"first proise"}))
+    promise.resolve().then(() => {
+        console.log("first promise")
+    })
     setTimeout(() => {
         console.log("setTimeout 2")
     }, 3000)
